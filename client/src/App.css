@@ -1,5 +1,10 @@
 .App {
   text-align: center;
+  background: #282C34;
+  display: grid;
+  grid-template-areas:
+   "header"
+   "links"
 }
 
 .App-logo {
@@ -9,7 +14,6 @@
 }
 
 .App-header {
-  background-color: #282c34;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -19,9 +23,19 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.links{
+  display: grid;
+  grid-template-columns: repeat(3, min-content);
+  grid-gap: 20px;
 }
+
+.App-link {
+  color: #FF002890;
+  text-shadow: 2px 2px 20px black;
+  font-size: 4rem;
+}
+
+
 
 @keyframes App-logo-spin {
   from {
